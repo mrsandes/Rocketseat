@@ -25,6 +25,10 @@
 DOM (Document Object Model): representação do html através do JavaScript
 JavaScript que constrói a aplicação por completo
 
+npm create vite@latest
+npm run dev
+obs: na pasta do projeto
+
 O react renderiza a tela a partir do main:
 ![[Pasted image 20241225185852.png]]
 O main faz a busca de um id root dentro do index:
@@ -72,6 +76,59 @@ Adição da importação automaticamente
 
 -webkit-font-smoothing: antialiased: padroniza as fontes para ficarem mais bonitas?
 
-Component: Header
+npm i phosphor-react
+https://phosphoricons.com/
 
+interações com foreach não tem retorno
+com map tem retorno
+![[Pasted image 20241226150822.png]]
 
+npm i date-fns
+https://date-fns.org/v4.1.0/docs/format
+
+useState retorna um array numerico e uma função que altera o array orginal e avisa para a aplicação que o array teve alteração, sendo possível atualizar a tela e mostrar os novos valores que foram adicionados 
+![[Pasted image 20241226155051.png]]
+
+... spread operator: le os valores existentes e copia
+![[Pasted image 20241226155011.png]]
+
+![[Pasted image 20241226161539.png]]
+
+key permite que o React identifique o item ao longo de sua vida útil, deve ser semelhante a um id, imutável após a criação e único por item, usado no map. Evita renderizar itens repetidamente. Não se pode usar o index do array pelo fato de eventuais trocas de posições fazem com que o react renderize todo o componente sem necessidade. Com uma key especifica isso não ocorre.
+![[Pasted image 20241227105248.png]]
+
+react developer tools
+
+É possível passar funções por propriedade através dos componentes
+
+onclick espera uma função 
+![[Pasted image 20241227113523.png]]
+da erro pois é uma execução de uma função
+![[Pasted image 20241227113612.png]]
+com arrow function se torna uma função
+
+![[Pasted image 20241227114509.png]]
+aumenta de 1 em 1
+
+![[Pasted image 20241227114635.png]]
+usa o valor antigo e aumenta de 1 em 1
+
+![[Pasted image 20241227114934.png]]
+aumenta de 2 em 2
+usando uma função o state acessa o valor mais recente de likeCount, criando uma fila de atualizações
+
+![[Pasted image 20241227115619.png]]
+
+javaScript permite mudar o tipo das variáveis no decorrer do código
+
+const constante
+let let it change 
+
+![[Pasted image 20241227173325.png]]
+
+![[Pasted image 20241227175314.png]]
+! garante que algo vai acontecer: root pode n existir
+
+![[Pasted image 20241227182923.png]]
+...props
+ImgHTMLAttributes permitem usar os atriburos de qualquer tag html dentro do ts

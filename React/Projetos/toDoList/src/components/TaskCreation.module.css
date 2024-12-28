@@ -1,0 +1,10 @@
+.creationArea {
+    display: flex;
+    justify-content: center;
+    margin-top: -1rem;
+}
+
+.textArea {
+    background: var(--gray-500);
+    
+}
