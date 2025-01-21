@@ -1,0 +1,43 @@
+.creationArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: calc(0px - 54px / 2) auto 0 auto;
+    gap: 8px;
+}
+
+.textArea {
+    background: var(--gray-500);
+    width: 638px;
+    resize: none;
+    border-radius: 8px;
+    border: 1px solid var(--gray-700);
+    height: 54px;
+    align-items: center;
+    padding: 1rem;
+    color: var(--gray-300);
+    font-size: 1rem;
+}
+
+.textArea:focus {
+    outline: 0;
+    border: 1px solid var(--purple-100);
+}
+
+.taskButton {
+    color: var(--gray-100);
+    background: var(--blue-200);
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.taskButton:hover {
+    background: var(--blue-100);
+}

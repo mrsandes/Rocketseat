@@ -1,0 +1,61 @@
+.header {
+    max-width: 736px;
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem auto 24px auto;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.header p {
+    display: inline-block;
+}
+
+.createdTasks, .finishedTasks {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.createdTasks p {
+    color: var(--blue-100);
+}
+
+.finishedTasks p {
+    color: var(--purple-100);
+}
+
+.header span {
+    background: var(--gray-400);
+    padding: 2px 8px;
+    border-radius: 100%;
+    color: var(--gray-200);
+}
+
+.tasksArea {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 736px;
+    border-radius: 8px; 
+    border-top: 3px solid var(--gray-400);
+    text-align: center;
+}
+
+.tasksArea > p {
+    font-weight: bold;
+    color: var(--gray-300);
+    font-size: 1rem;
+}
+
+.tasksArea p + p{
+    font-weight: normal;
+    color: var(--gray-300);
+}
+
+.tasksArea > svg {
+    margin-top: 64px;
+    color: var(--gray-400);
+}
